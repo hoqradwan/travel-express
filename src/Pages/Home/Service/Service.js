@@ -1,19 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Service = () => {
+const Service = ({ service }) => {
+  const { img, name, description, price } = service;
   return (
     <div className="g-5 col-12 col-md-6 col-lg-4">
       <div className="card " style={{ width: "18rem" }}>
         <img src={img} className="card-img-top" alt="..."></img>
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" className="btn btn-primary">
-            checkout{" "}
-          </a>
+          <p className="card-text">{description}</p>
+          <p>{price}</p>
+          <Link to="/checkout">
+            <button className="btn btn-primary">Checkout</button>
+          </Link>
         </div>
       </div>
     </div>

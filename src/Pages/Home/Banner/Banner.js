@@ -1,11 +1,11 @@
 import React from "react";
-import banner from "../../../images/bannerbackground.png";
+// import banner from "../../../images/bannerbackground.png";
 import './Banner.css';
 const Banner = () => {
   return (
     <div>
       <div className="banner">
-        <img  src={banner} alt="" />;
+        <img  src="" alt="" />;
       </div>
       <div className="banner-content">
         <h1 className="fw-normal">Best food waiting for your belly</h1>

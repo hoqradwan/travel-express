@@ -1,0 +1,12 @@
+.checkout{
+    background-color: #F9676B;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.checkout:hover{
+    background-color: white ;
+    color: #F9676B;
+    border: 1px solid #F9676B;
+}

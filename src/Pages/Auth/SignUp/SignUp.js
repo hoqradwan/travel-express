@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {
-  useCreateUserWithEmailAndPassword} from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const SignUp = () => {
   const [userInfo, setUserInfo] = useState({
@@ -18,7 +18,7 @@ const SignUp = () => {
     general: "",
   });
   const [createUserWithEmailAndPassword, user, loading, hookError] =
-    useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const handleEmailBlur = (e) => {
     const emailRegex = /\S+@\S+\.\S+/;
     const validEmail = emailRegex.test(e.target.value);
@@ -75,6 +75,7 @@ const SignUp = () => {
     <>
       <form onSubmit={handleSubmit} className="mx-auto w-25 mt-5">
         <input
+          className="form-control"
           onChange={handleEmailBlur}
           placeholder="Email Address"
           type="email"
@@ -83,6 +84,7 @@ const SignUp = () => {
         />
         {errors?.email && <p>{errors.email}</p>}
         <input
+          className="form-control mt-2"
           onChange={handlePasswordChange}
           placeholder="Password"
           type="password"
@@ -91,6 +93,7 @@ const SignUp = () => {
         />
         {errors?.password && <p>{errors.password}</p>}
         <input
+          className="form-control my-2"
           onChange={handleConfirmPasswordChange}
           placeholder="Confirm password"
           type="password"
@@ -101,7 +104,11 @@ const SignUp = () => {
         {/* {error && <p>{error}</p>} */}
         {hookError && <p>{hookError?.message}</p>}
         <ToastContainer />
+        <p>
+          Already have an account? <Link style={{color: "#f9676b"}} className="text-decoration-none" to="/login">Please login</Link>
+        </p>
       </form>
+      <SocialLogin></SocialLogin>
     </>
   );
 };

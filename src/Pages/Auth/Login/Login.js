@@ -5,6 +5,7 @@ import "./Login.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const [userInfo, setUserInfo] = useState({
@@ -68,6 +69,7 @@ const Login = () => {
     <>
       <form onSubmit={handleSubmit} className="mx-auto w-25 mt-5">
         <input
+          className="form-control"
           onChange={handleEmailBlur}
           placeholder="Email Address"
           type="email"
@@ -76,6 +78,7 @@ const Login = () => {
         />
         {errors?.email && <p>{errors.email}</p>}
         <input
+          className="form-control my-2"
           onChange={handlePasswordBlur}
           placeholder="Password"
           type="password"
@@ -83,14 +86,23 @@ const Login = () => {
           id=""
         />
         {errors?.password && <p>{errors.password}</p>}
-      
+
         <button className="login-btn">Login</button>
         {/* {error && <p>{error}</p>} */}
         {hookError && <p>{hookError?.message}</p>}
         <ToastContainer />
-        <p>Don't have an account? <Link to="/signup">Sign up first</Link></p>
-
+        <p>
+          Don't have an account?{" "}
+          <Link
+            style={{ color: "#f9676b" }}
+            className="text-decoration-none"
+            to="/signup"
+          >
+            Sign up first
+          </Link>
+        </p>
       </form>
+      <SocialLogin></SocialLogin>
     </>
   );
 };

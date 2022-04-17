@@ -1,17 +1,26 @@
 .link-container a {
   text-decoration: none;
   margin-right: 15px;
-}
-/* .link-container {
-  margin-left: 200px;
-} */
-.signup {
-  background-color: #F9676B;
-  color: white;
-  border-radius: 20px;
-  padding: 5px 15px ;
+  color: black;
 }
 
-.logo{
-  color: #F9676B;
+.link-container a:hover{
+ color: #f9676b;
+}
+.signup {
+  background-color: #f9676b;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.signup:hover {
+  background-color: white;
+  color: #f9676b;
+  border: 1px solid #f9676b;
+}
+
+.logo {
+  color: #f9676b;
 }

@@ -1,11 +1,7 @@
-.footer{
-    position: relative;
-}
-.footer-content{
-    position: absolute;
-top: 1300px;
-left: 100px;
-}
 .contact{
     color: white;
+}
+.footer-content{
+    height: 250px;
+    width: 100%;
 }

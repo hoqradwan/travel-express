@@ -1,0 +1,23 @@
+.banner img{
+    width: 100% ;
+}
+.banner{
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    top: 250px;
+    left: 350px;
+}
+.src-input{
+    border-radius: 20px;
+    border: none;
+    margin-right: 5px ;
+}
+.src-btn{
+    border: none;
+    border-radius: 20px;
+    background-color: #F91944;
+    color: white;
+    padding: 5px 15px;
+}

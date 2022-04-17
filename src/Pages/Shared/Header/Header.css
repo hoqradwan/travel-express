@@ -1,0 +1,13 @@
+.link-container a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+.link-container {
+  margin-left: 200px;
+}
+.signup {
+  background-color: #f91944;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px ;
+}

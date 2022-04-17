@@ -1,21 +1,21 @@
 [
     {
         "id": 1,
-        "img": "",
+        "img": "../src/images/pack-1.jpg",
         "name": "AMERICA - 5 Days, 4 Nights",
         "description": "How we dream about our future",
         "price": 3000
       },
     {
         "id": 2,
-        "img": "",
+        "img": "../src/images/pack-2.jpg",
         "name": "THAILAND - 4 Days, 3 Nights",
         "description": "How we dream about our future",
         "price": 2000
       },
     {
         "id": 3,
-        "img": "",
+        "img": "../src/images/pack-3.jpg",
         "name": "JAPAN - 3 Days, 2 Nights",
         "description": "How we dream about our future",
         "price": 1200

@@ -7,7 +7,7 @@
 .banner-content{
     position: absolute;
     top: 250px;
-    left: 350px;
+    left: 300px;
 }
 .src-input{
     border-radius: 20px;
@@ -17,7 +17,7 @@
 .src-btn{
     border: none;
     border-radius: 20px;
-    background-color: #F91944;
+    background-color: #f9676b;
     color: white;
     padding: 5px 15px;
 }

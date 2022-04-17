@@ -2,12 +2,16 @@
   text-decoration: none;
   margin-right: 15px;
 }
-.link-container {
+/* .link-container {
   margin-left: 200px;
-}
+} */
 .signup {
   background-color: #F9676B;
   color: white;
   border-radius: 20px;
   padding: 5px 15px ;
+}
+
+.logo{
+  color: #F9676B;
 }

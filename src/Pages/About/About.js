@@ -4,7 +4,7 @@ import about from "../../images/about.jpg";
 
 const About = () => {
   return (
-    <div className="about-container d-flex flex-column align-items-center">
+    <div className="about-container d-flex flex-column justify-content-center align-items-center">
       <h2 className="about text-center">About Me</h2>
       <div className="mt-2">
         <img src={about} alt="" />

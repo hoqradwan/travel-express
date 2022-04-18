@@ -10,10 +10,11 @@ const Popular = () => {
           <h1>Popular Services</h1>
           <h5 className="mt-1">ENJOY THE VIEWS OF A LIFETIME</h5>
           <p>
-            We denounce with righteous indignation and dislike men who are so
-            beguiled and demoralized by the charms of pleasure of the moment, so
-            blinded by desire, that they cannot foresee the pain and trouble
-            that are bound to ensue; and equal blame belongs.
+            A number of my services are highly appreciated by the travellers.
+            Those services delighted them in a whole. My first and foremost duty
+            is to ensure the best quality services for you. So, travelers are
+            getting a great opportunity to enjoy their holidays with amazing
+            packages. After all, I hope you will enjoy a great journey.
           </p>
           <div className="popular-list d-flex">
             <ul className="me-5">

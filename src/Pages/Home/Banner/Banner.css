@@ -6,19 +6,17 @@
 }
 .banner-content{
     position: absolute;
-    top: 280px;
-    left: 245px;
+    top: 220px;
+    left: 250px;
 }
 
 .explore-btn{
     border: none;
     background-color: #f9676b;
     color: white;
+    /* margin: 0 200px; */
 }
 .heading{
     font-size: 45px;
     color: white;
-}
-.explore{
-    margin: 0 300px;
 }

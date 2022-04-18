@@ -6,7 +6,7 @@ const Popular = () => {
   return (
     <div className="container">
       <div className="d-lg-flex align-items-center">
-        <div className="popular-content me-3 pe-3">
+        <div className="popular-content me-3">
           <h1>Popular Services</h1>
           <h5 className="mt-1">ENJOY THE VIEWS OF A LIFETIME</h5>
           <p>
@@ -30,7 +30,7 @@ const Popular = () => {
           </div>
         </div>
         <div>
-          <img height={400} width={450} src={popular} alt="" />
+          <img className="img-fluid" width={1200} src={popular} alt="" />
         </div>
       </div>
     </div>

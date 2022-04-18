@@ -6,8 +6,8 @@
 }
 .banner-content {
   position: absolute;
-  top: 220px;
-  left: 90px;
+  top: 250px;
+  left: 70px;
 }
 
 .explore-btn {
@@ -25,7 +25,7 @@
 }
 .heading {
     color: #fff;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }

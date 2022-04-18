@@ -9,7 +9,7 @@ const Banner = () => {
       </div>
       <div className="banner-content text-center">
         <h1 className="heading">Best experiences waiting for your next tour</h1>
-        <button className="explore-btn p-3">Explore More</button>
+        <button className="explore-btn mt-2 p-3">Explore More</button>
 
       </div>
     </div>

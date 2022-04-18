@@ -8,17 +8,16 @@
  color: #f9676b;
 }
 .signup {
-  background-color: #f9676b;
-  color: white;
-  border: none;
+  background-color: white;
+  color: #f9676b;
+  border: 1px solid #f9676b;
   padding: 5px 15px;
   border-radius: 20px;
   font-size: 14px;
 }
 .signup:hover {
-  background-color: white;
-  color: #f9676b;
-  border: 1px solid #f9676b;
+  background-color: #f9676b;
+  color: white;
 }
 
 .logo {

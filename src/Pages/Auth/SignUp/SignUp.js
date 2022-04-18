@@ -81,6 +81,7 @@ const SignUp = () => {
           type="email"
           name="email"
           id=""
+          required
         />
         {errors?.email && <p className="text-danger">{errors.email}</p>}
         <input
@@ -90,6 +91,7 @@ const SignUp = () => {
           type="password"
           name="password"
           id=""
+          required
         />
         {errors?.password && <p className="text-danger">{errors.password}</p>}
         <input
@@ -99,11 +101,12 @@ const SignUp = () => {
           type="password"
           name="confirm-password"
           id=""
+          required
         />
         <button className="login-btn">Sign up</button>
         {hookError && <p className="text-danger">{hookError?.message}</p>}
         <ToastContainer />
-        <p>
+        <p className="mt-2">
           Already have an account? <Link style={{color: "#f9676b"}} className="text-decoration-none" to="/login">Please login</Link>
         </p>
       </form>

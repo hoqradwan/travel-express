@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import "./Login.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -19,6 +22,7 @@ const Login = () => {
   });
   const [signInWithEmailAndPassword, user, loading, hookError] =
     useSignInWithEmailAndPassword(auth);
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   const handleEmailBlur = (e) => {
     const emailRegex = /\S+@\S+\.\S+/;
     const validEmail = emailRegex.test(e.target.value);
@@ -59,6 +63,14 @@ const Login = () => {
       navigate(from);
     }
   }, [user]);
+  const resetPassword = async () => {
+    if (userInfo.email) {
+      await sendPasswordResetEmail(userInfo.email);
+      toast("Sent email");
+    } else {
+      toast("please enter your email address");
+    }
+  };
   return (
     <>
       <form onSubmit={handleSubmit} className="mx-auto w-25 mt-5">
@@ -69,6 +81,7 @@ const Login = () => {
           type="email"
           name="email"
           id=""
+          required
         />
         {errors?.email && <p className="text-danger">{errors.email}</p>}
         <input
@@ -78,13 +91,14 @@ const Login = () => {
           type="password"
           name="password"
           id=""
+          required
         />
         {errors?.password && <p className="text-danger">{errors.password}</p>}
 
         <button className="login-btn">Login</button>
         {hookError && <p className="text-danger">{hookError?.message}</p>}
         <ToastContainer />
-        <p>
+        <p className="mt-2">
           Don't have an account?{" "}
           <Link
             style={{ color: "#f9676b" }}
@@ -94,7 +108,17 @@ const Login = () => {
             Sign up first
           </Link>
         </p>
+        <p>
+          Forget Password?{" "}
+          <button
+            className="btn btn-link text-danger  text-decoration-none"
+            onClick={resetPassword}
+          >
+            Reset Password
+          </button>{" "}
+        </p>
       </form>
+
       <SocialLogin></SocialLogin>
     </>
   );

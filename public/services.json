@@ -3,21 +3,21 @@
     "id": 1,
     "img": "https://www.devsnews.com/template/travelexpress/travelexpress/img/package/pack-1.jpg",
     "name": "AMERICA - 5 Days, 4 Nights",
-    "description": "This is an amazing package, I will organize your trip to go to America. Food, hotel and other facilities are included on this package",
+    "description": "a trip to America. Food, hotel and other facilities are included in this package",
     "price": 3000
   },
   {
     "id": 2,
     "img": "https://www.devsnews.com/template/travelexpress/travelexpress/img/package/pack-2.jpg",
     "name": "THAILAND - 4 Days, 3 Nights",
-    "description": "The Thailand trip package is of a very moderate price. Food, hotel, and other things are also included in this pack",
+    "description": "At a very moderate cost we will go Thiland. Food, hotel, and other things are also included in this pack",
     "price": 2000
   },
   {
     "id": 3,
     "img": "https://www.devsnews.com/template/travelexpress/travelexpress/img/package/pack-3.jpg",
     "name": "JAPAN - 3 Days, 2 Nights",
-    "description": "Japan tour is also a sensational package added this year. I will guide you to roam around the beautiful places of Japan.",
+    "description": "I will guide you to roam around the beautiful places of Japan.",
     "price": 1200
   }
 ]

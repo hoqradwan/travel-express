@@ -17,7 +17,7 @@ const SocialLogin = () => {
     <div>
       <div className="d-flex justify-content-center align-items-center">
         <div style={{ height: "1px" }} className="line "></div>
-        <p className="mt-2 px-2">or</p>
+        <p className=" px-2">or</p>
         <div style={{ height: "1px" }} className="line "></div>
       </div>
       <div>

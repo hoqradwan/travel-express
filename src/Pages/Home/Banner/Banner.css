@@ -1,22 +1,31 @@
-.banner img{
-    width: 100% ;
+.banner img {
+  width: 100%;
 }
-.banner{
-    position: relative;
+.banner {
+  position: relative;
 }
-.banner-content{
-    position: absolute;
-    top: 220px;
-    left: 250px;
+.banner-content {
+  position: absolute;
+  top: 220px;
+  left: 90px;
 }
 
-.explore-btn{
-    border: none;
-    background-color: #f9676b;
-    color: white;
-    /* margin: 0 200px; */
+.explore-btn {
+  background: #f9676b;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  border: none;
+  padding: 20px 40px;
+  display: inline-block;
 }
-.heading{
-    font-size: 45px;
-    color: white;
+.explore-btn:hover{
+    background-color: #fff;
+    color: #f9676b;
+}
+.heading {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 5px;
 }

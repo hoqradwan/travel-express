@@ -29,7 +29,7 @@ const Popular = () => {
           </div>
         </div>
         <div>
-          <img height={400} width={500} src={popular} alt="" />
+          <img height={400} width={450} src={popular} alt="" />
         </div>
       </div>
     </div>

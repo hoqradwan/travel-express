@@ -8,6 +8,7 @@ import RequireAuth from "./Pages/Auth/RequireAuth/RequireAuth";
 import Checkout from "./Pages/Checkout/Checkout";
 import Login from "./Pages/Auth/Login/Login";
 import SignUp from "./Pages/Auth/SignUp/SignUp";
+import NotFound from "./Pages/Shared/NotFound/NotFound";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );

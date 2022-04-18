@@ -82,7 +82,7 @@ const SignUp = () => {
           name="email"
           id=""
         />
-        {errors?.email && <p>{errors.email}</p>}
+        {errors?.email && <p className="text-danger">{errors.email}</p>}
         <input
           className="form-control mt-2"
           onChange={handlePasswordChange}
@@ -91,7 +91,7 @@ const SignUp = () => {
           name="password"
           id=""
         />
-        {errors?.password && <p>{errors.password}</p>}
+        {errors?.password && <p className="text-danger">{errors.password}</p>}
         <input
           className="form-control my-2"
           onChange={handleConfirmPasswordChange}
@@ -101,8 +101,7 @@ const SignUp = () => {
           id=""
         />
         <button className="login-btn">Sign up</button>
-        {/* {error && <p>{error}</p>} */}
-        {hookError && <p>{hookError?.message}</p>}
+        {hookError && <p className="text-danger">{hookError?.message}</p>}
         <ToastContainer />
         <p>
           Already have an account? <Link style={{color: "#f9676b"}} className="text-decoration-none" to="/login">Please login</Link>

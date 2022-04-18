@@ -27,10 +27,7 @@ const Header = () => {
                   About
                 </Nav.Link>
                 {user ? (
-                  <a
-                    style={{ cursor: "pointer" }}onClick={() => signOut(auth)}>
-                    Log out
-                  </a>
+                  <Nav.Link onClick={() => signOut(auth)}>Log out</Nav.Link>
                 ) : (
                   <Nav.Link as={Link} to="login">
                     Login

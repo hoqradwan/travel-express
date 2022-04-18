@@ -17,7 +17,6 @@ const Login = () => {
     password: "",
     general: "",
   });
-  //   const [registered, setRegistered] = useState(false);
   const [signInWithEmailAndPassword, user, loading, hookError] =
     useSignInWithEmailAndPassword(auth);
   const handleEmailBlur = (e) => {
@@ -42,11 +41,6 @@ const Login = () => {
       setUserInfo({ ...userInfo, password: "" });
     }
   };
-  /*    const handlePasswordReset = () => {
-    sendPasswordResetEmail(auth, email).then(() => {
-      console.log("reset");
-    });
-  }; */
   const handleSubmit = (e) => {
     signInWithEmailAndPassword(userInfo.email, userInfo.password);
 
@@ -76,7 +70,7 @@ const Login = () => {
           name="email"
           id=""
         />
-        {errors?.email && <p>{errors.email}</p>}
+        {errors?.email && <p className="text-danger">{errors.email}</p>}
         <input
           className="form-control my-2"
           onChange={handlePasswordBlur}
@@ -85,11 +79,10 @@ const Login = () => {
           name="password"
           id=""
         />
-        {errors?.password && <p>{errors.password}</p>}
+        {errors?.password && <p className="text-danger">{errors.password}</p>}
 
         <button className="login-btn">Login</button>
-        {/* {error && <p>{error}</p>} */}
-        {hookError && <p>{hookError?.message}</p>}
+        {hookError && <p className="text-danger">{hookError?.message}</p>}
         <ToastContainer />
         <p>
           Don't have an account?{" "}

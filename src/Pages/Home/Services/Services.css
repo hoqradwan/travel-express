@@ -1,4 +1,11 @@
 .services{
-    margin-bottom: 100px
-    ;
+    margin-bottom: 100px;
+}
+.services h2{
+    color: #1b1b1b;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 5px;
 }

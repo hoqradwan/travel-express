@@ -1,20 +1,27 @@
 import React from "react";
 import banner from "../../../images/banner.jpg";
-import './Banner.css';
+import "./Banner.css";
 const Banner = () => {
   return (
     <div>
       <div className="banner">
-        <img height={600} src={banner} alt="" />;
+        <img height={500} src={banner} alt="" />;
       </div>
       <div className="banner-content">
         <h1 className="heading">Best experiences waiting for your next tour</h1>
-      <div className="d-flex justify-content-center mt-4">
-        <input  placeholder="Search services" className="form-control w-50 src-input ps-3" type="text" />
-        <button className="src-btn">Search</button>
+        <div className="explore">
+        <button className="explore-btn m-5 p-3">Explore More</button>
+
+        </div>
+
+       {/*  <div className="d-flex justify-content-center mt-4">
+          <input
+            placeholder="Search services"
+            className="form-control w-50 src-input ps-3"
+            type="text"
+          />
+        </div> */}
       </div>
-      </div>
-    
     </div>
   );
 };

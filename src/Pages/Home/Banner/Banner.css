@@ -6,22 +6,19 @@
 }
 .banner-content{
     position: absolute;
-    top: 250px;
+    top: 280px;
     left: 245px;
 }
-.src-input{
-   /*  border-radius: 20px;
+
+.explore-btn{
     border: none;
-    margin-right: 5px ; */
-}
-.src-btn{
-    border: none;
-    border-radius: 10px;
     background-color: #f9676b;
     color: white;
-    padding: 5px 15px;
 }
 .heading{
     font-size: 45px;
     color: white;
+}
+.explore{
+    margin: 0 300px;
 }

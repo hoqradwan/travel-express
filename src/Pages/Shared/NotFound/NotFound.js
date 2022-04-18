@@ -1,9 +1,10 @@
 import React from 'react';
+import notfound from "../../../images/notfound.webp"
 
 const NotFound = () => {
     return (
         <div>
-            <h1 className='text-center mt-4'>404 Not Found</h1>
+            <img className='img-fluid' src={notfound} alt="" />
         </div>
     );
 };
